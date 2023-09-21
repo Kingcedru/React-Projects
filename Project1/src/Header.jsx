@@ -1,21 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import logo from "./assets/react.svg"
+import './index.css'
 
-function Header() {
+function Header(){
     return (
-        <header>
-            <nav className='nav'>
-                <img src={reactLogo} className='im' />
-                <ul className="nav-items">
-                      <li>Pricing</li>
-                      <li>About</li>
-                      <li>Contact</li>
-                  </ul>
-            </nav>
-        </header>
+        <div className="header">
+            <div className="logos">
+                <img src={logo}></img>
+                <h1 className="Htitle">React Facts</h1>
+            </div>
+            <h2 className="Htitle2">React Course - Project 1</h2>
+        </div>
     )
-  }
+}
 
-  export default Header
+export default Header
