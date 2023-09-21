@@ -1,7 +1,7 @@
 body{
     margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: center;h;
 }
 #root{
     width: 550px;
@@ -57,3 +57,8 @@ body{
     padding-left: 90px;
     gap: 20px;
 }
+li::marker {
+    font-size: 1.6em;
+    color: #61DAFB;
+}
+  
