@@ -6,7 +6,7 @@ body{
 #root{
     width: 550px;
     display: grid;
-    /* height: 100vh; */
+    margin-top: 20px;
 }
 .im{
     width: 28.93px;
@@ -42,6 +42,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 30px;
     padding-bottom: 70px;
+    height: fit-content;
 }
 .Ctitle{
     color: white;
