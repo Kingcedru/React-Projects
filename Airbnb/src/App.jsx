@@ -48,7 +48,7 @@ function App() {
       decide = "Sold"
     }
 
-    return <Content3 img={items.img} price={items.price} title={items.title} rate={items.rate} number={items.number} country={items.country} decision={decide}/>
+    return <Content3 {...items} decision={decide}/>
   })
   return (
     <div className='w-3/6 mx-auto rounded-sm shadow-lg'>
