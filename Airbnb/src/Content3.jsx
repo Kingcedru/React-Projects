@@ -1,6 +1,6 @@
 import star from './assets/grids/Star 1.png'
 
-function Content3({img,price,title,number,country,rate}){
+function Content3({img,price,title,number,country,rate,decision}){
     return (
             <div className="grid ml-14 mb-10">
                 <div>
@@ -13,6 +13,7 @@ function Content3({img,price,title,number,country,rate}){
                     </div>
                     <h3 className="text-xs font-light">{title}</h3>
                     <h3 className="text-sm"><span className="font-bold">From ${price}</span> / person</h3>
+                    <h1>{decision}</h1>
                 </div>
             </div>
     )

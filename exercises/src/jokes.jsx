@@ -1,9 +1,18 @@
-function Jokes({name,age}){
+
+
+function Jokes({img,name,rate}){
     return(
-        <>
-        <h1>Name: {name}</h1>
-        <h1>Age: {age}</h1>
-        </>
+            <div className="grid w-20 h-20">
+                <img src={img}/>
+                <div>
+                    <h1>{name}</h1>
+                </div>
+            </div>
+            
+                
+
+            
+       
     )
 }
 
