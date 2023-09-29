@@ -1,20 +1,23 @@
-import { useState } from "react";
-import meme1 from './assets/meme1.png'
-import meme2 from './assets/meme2.png'
-import meme3 from './assets/meme3.png'
+import { useState, useEffect } from "react";
 
-export default function Meme(){
-    const memes = [meme1,meme2,meme3]
-    const [index, setIndex] = useState(0);
+
+export default function Meme(){    
+    const [meme, setMeme] = useState([]);
     
-    function changeMeme(){
-        setIndex((prev)=> prev = Math.floor(Math.random() * memes.length));
-    }
+    useEffect(()=>{
+        fetch("https://api.imgflip.com/get_memes")
+        .then((response)=> response.json())
+        .then(data=> setMeme(data.data.memes))
+    },[])
 
+    function changeMeme(){
+       nextUrl(meme[Math.floor(Math.random() * meme.length)].url)
+    }
     const [current,nextText] = useState({
         text1: '',
         text2: ''
     })
+    const [imageUrl,nextUrl] = useState("")
 
     function AddText(event){
         nextText(texts=>{
@@ -34,7 +37,7 @@ export default function Meme(){
                 </div>
                 <div className="images flex justify-center gap-6">
                     <div className="grid relative">
-                        <img src={memes[index]}></img>
+                        <img src={imageUrl}></img>
                         <h1  className="absolute top-0 h-44 w">{current.text1}</h1>
                         <h1 className="absolute bottom-0">{current.text2}</h1>
                     </div>
