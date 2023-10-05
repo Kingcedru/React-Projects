@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+#root{
+    width: 550px;
+    display: grid;
+    margin-top: 20px;
+}
+.im{
+    width: 28.93px;
+    height: 28.93px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: #21222A;
+    height: fit-content;
+}
+.logos{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Htitle{
+    color: #61DAFB;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+.Htitle2{
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.content{
+    background-color: #282D35;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    height: fit-content;
+}
+.Ctitle{
+    color: white;
+    padding-left: 40px;
+}
+.LImages{
+    display: flex;
+}
+.Ulists{
+    color: white;
+    display: grid;
+    padding-left: 90px;
+    gap: 20px;
+}
+li::marker {
+    font-size: 1.6em;
+    color: #61DAFB;
+}
+  
